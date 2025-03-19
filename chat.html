@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landbot Integration</title>
+</head>
+<body>
+
+    <!-- Landbot Live Chat Widget -->
+    <script>
+        window.addEventListener('mouseover', initLandbot, { once: true });
+        window.addEventListener('touchstart', initLandbot, { once: true });
+        var myLandbot;
+
+        function initLandbot() {
+            if (!myLandbot) {
+                var s = document.createElement('script');
+                s.type = "module";
+                s.async = true;
+                s.addEventListener('load', function() {
+                    myLandbot = new Landbot.Livechat({
+                        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2825823-TC9ITKGDVJKH683R/index.json',
+                    });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+                document.head.appendChild(s);
+            }
+        }
+    </script>
+
+</body>
+</html>

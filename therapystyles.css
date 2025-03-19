@@ -1,0 +1,211 @@
+.therapists {
+    text-align: center;
+    padding: 20px;
+}
+
+.therapist-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.therapist-card {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 12px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.therapist-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.therapist-card h3 {
+    margin: 10px 0;
+}
+
+.therapist-card p {
+    color: #555;
+}
+
+.therapist-card button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.therapist-card button:hover {
+    background: #0056b3;
+}
+
+/* Booking Form */
+.booking-form {
+    text-align: center;
+    padding: 20px;
+    background: #e0f7fa;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 50%;
+    display: none;
+}
+
+.booking-form input, .booking-form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.booking-form button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background: #218838;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+.dark-mode {
+    background-color: #222;
+    color: #f4f4f9;
+}
+header {
+    background: #6a0572;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ffccff;
+}
+#dark-mode-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: white;
+    color: #6a0572;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+#dark-mode-toggle:hover {
+    background: #ddd;
+}
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #6a0572;
+    color: white;
+}
+.hero h2 {
+    font-size: 2.5em;
+}
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #6a0572;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.hero .btn:hover {
+    background: #ddd;
+}
+.about, .testimonials, .contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+footer {
+    background: #6a0572;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Services Section */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Service Box */
+.service-box {
+    display: block;
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hover effect */
+.service-box:hover {
+    transform: scale(1.05);
+    background: #4bd466;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode styles */
+.dark-mode .service-box {
+    background: #222;
+    color: #000000;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .service-box:hover {
+    background: #333;
+    box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
